@@ -303,6 +303,7 @@ function GameManager(){
 
   this.delAndAddNews = function(itemsVecinos){
     app.afterItemsMatch(itemsVecinos.length*10);
+    itemsVecinos.draggable("disable");
     itemsVecinos.effect("pulsate", 800,function(){
       var newItem = $(app.getRandomItems(1)[0])
       firstItemSrc = $(this).parent().children().first().attr("src")
