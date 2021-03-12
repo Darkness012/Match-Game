@@ -1,0 +1,123 @@
+@font-face {
+  font-family: gameFont;
+  src: url('../fonts/PressStart2P.ttf');
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+}
+
+div[class^='col'] img{
+  max-width: 100%;
+  user-select: none;
+}
+
+.main-container{
+  width: 90%;
+  max-width: 1100px;
+  max-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.main-titulo{
+  font-family: gameFont;
+  font-size: 3em;
+  color: #DCFF0E;
+  width: 100%;
+  user-select: none;
+}
+
+.gameover-text{
+  display: none;
+  font-family: gameFont;
+  font-size: 3em;
+  color: #DCFF0E;
+  width: 100%;
+  user-select: none;
+  text-align: center;
+}
+
+.panel-tablero{
+  width: 70%;
+  border: 10px solid #E87306;
+  background: rgba(232, 115, 6, 0.5);
+  border-radius: 5px;
+  height: 700px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel-score{
+  width: 25%;
+  height: 700px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.score, .moves, .time{
+  text-align: center;
+  height: 23%;
+  width: 100%;
+  border: 10px solid #E87306;
+  border-radius: 5px;
+  margin: 0;
+  background: rgba(232, 115, 6, 0.5);
+}
+
+
+.buttons{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.data-titulo, .data-info{
+  font-family: gameFont;
+  color: #E8CA06;
+  user-select: none;
+}
+.titulo-over{
+  font-family: gameFont;
+  font-size: 3em;
+  text-align: center;
+  color: #DCFF0E;
+}
+.btn-reinicio{
+  background: #E8CA06;
+  border: 6px solid #FFB206;
+  border-radius: 5px;
+  font-family: gameFont;
+  font-size: 1.2em;
+  color: #FF4007;
+}
+.btn-reinicio:hover{
+  color: #fff;
+  cursor: pointer;
+}
+.btn-reinicio:active{
+  font-size: 1em;
+}
+.data-info{
+  font-size: 1.8em;
+}
+div[class^='col']{
+  width: 14.28%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+ }
+
+.elemento{
+  width: 95.4px;
+  height: auto;
+}
